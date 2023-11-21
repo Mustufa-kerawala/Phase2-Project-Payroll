@@ -1,13 +1,13 @@
 {
-  "Staff" : [
+  "Staff": [
     {
       "id": 1,
       "first_name": "Raimondo",
       "last_name": "Whiteman",
       "email": "rwhiteman0@fda.gov",
       "gender": "Male",
-      "SalaryKSH": 70911,
-      "Taxes": 5088
+      "SalaryKSH": "75000",
+      "Taxes": "5000"
     },
     {
       "id": 2,
@@ -91,5 +91,4 @@
       "Taxes": 6585
     }
   ]
-  
 }

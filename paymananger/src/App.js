@@ -25,7 +25,9 @@ function App() {
   return (
     <div className="App">
       <h1>Payroll Manager</h1>
-      <PayrollList staffData={staff}/>
+      <PayrollList 
+      staffData={staff}
+      setStaffData={setStaff}/>
     </div>
   );
 }
