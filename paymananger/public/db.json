@@ -1,0 +1,95 @@
+{
+  "Staff" : [
+    {
+      "id": 1,
+      "first_name": "Raimondo",
+      "last_name": "Whiteman",
+      "email": "rwhiteman0@fda.gov",
+      "gender": "Male",
+      "SalaryKSH": 70911,
+      "Taxes": 5088
+    },
+    {
+      "id": 2,
+      "first_name": "Kathe",
+      "last_name": "Smallwood",
+      "email": "ksmallwood1@chicagotribune.com",
+      "gender": "Female",
+      "SalaryKSH": 34716,
+      "Taxes": 3851
+    },
+    {
+      "id": 3,
+      "first_name": "Lydia",
+      "last_name": "Lyle",
+      "email": "llyle2@businessweek.com",
+      "gender": "Female",
+      "SalaryKSH": 26533,
+      "Taxes": 6524
+    },
+    {
+      "id": 4,
+      "first_name": "Sheelagh",
+      "last_name": "Castanyer",
+      "email": "scastanyer3@123-reg.co.uk",
+      "gender": "Female",
+      "SalaryKSH": 56345,
+      "Taxes": 7388
+    },
+    {
+      "id": 5,
+      "first_name": "Lillian",
+      "last_name": "Rean",
+      "email": "lrean4@upenn.edu",
+      "gender": "Female",
+      "SalaryKSH": 30162,
+      "Taxes": 5749
+    },
+    {
+      "id": 6,
+      "first_name": "Storm",
+      "last_name": "Gundrey",
+      "email": "sgundrey5@nsw.gov.au",
+      "gender": "Female",
+      "SalaryKSH": 80684,
+      "Taxes": 3504
+    },
+    {
+      "id": 7,
+      "first_name": "Martynne",
+      "last_name": "Tumilson",
+      "email": "mtumilson6@moonfruit.com",
+      "gender": "Female",
+      "SalaryKSH": 80737,
+      "Taxes": 1031
+    },
+    {
+      "id": 8,
+      "first_name": "Clarice",
+      "last_name": "Bowater",
+      "email": "cbowater7@ftc.gov",
+      "gender": "Female",
+      "SalaryKSH": 63286,
+      "Taxes": 6824
+    },
+    {
+      "id": 9,
+      "first_name": "Lay",
+      "last_name": "Yerrell",
+      "email": "lyerrell8@mtv.com",
+      "gender": "Male",
+      "SalaryKSH": 98455,
+      "Taxes": 8204
+    },
+    {
+      "id": 10,
+      "first_name": "Ernie",
+      "last_name": "Bezzant",
+      "email": "ebezzant9@mail.ru",
+      "gender": "Male",
+      "SalaryKSH": 37875,
+      "Taxes": 6585
+    }
+  ]
+  
+}
