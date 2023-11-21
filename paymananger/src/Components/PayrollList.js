@@ -1,21 +1,25 @@
 import React, { useState } from 'react'
 
 function PayrollList({staffData, setStaffData}) {
-   
+//    Created state for editing and new data
     const [editing, setEditing] = useState(null);
     const [newData, setNewData] = useState({});
 
+    // If no data, show loading
     if (!staffData || staffData.length === 0) {
         return <div>Loading...</div>;
     }
 
+    // Get keys from first object in array
     const keys = Object.keys(staffData[0]);
 
+    // Handle edit and save
     const handleEdit = (index) => {
         setEditing(index);
         setNewData(staffData[index]);
     };
 
+    // Handle save
     const handleSave = (index) => {
         const updatedStaffMember = newData;
 
@@ -38,7 +42,26 @@ function PayrollList({staffData, setStaffData}) {
         });
     };
 
+    // Handle delete
+    const handleDelete = (index) => {
+        const staffMember = staffData[index];
+    
+        fetch(`http://localhost:3001/staff/${staffMember.id}`, {
+            method: 'DELETE',
+        })
+        .then(() => {
+            const updatedStaffData = [...staffData];
+            updatedStaffData.splice(index, 1);
+            setStaffData(updatedStaffData);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    };
+    
+
     return (
+        // Create table with headers from keys
         <table>
             <thead>
                 <tr>
@@ -47,6 +70,7 @@ function PayrollList({staffData, setStaffData}) {
                 </tr>
             </thead>
             <tbody>
+                
                 {staffData.map((staffMember, index) => (
                     <tr key={index}>
                         {keys.map((key, i) => 
@@ -65,7 +89,10 @@ function PayrollList({staffData, setStaffData}) {
                             {editing === index ? 
                                 <button onClick={() => handleSave(index)}>Save</button> 
                                 : 
+                                <>
                                 <button onClick={() => handleEdit(index)}>Edit</button>
+                                <button onClick={() => handleDelete(index)}>Delete</button>
+                                </>
                             }
                         </td>
                     </tr>
